@@ -7,10 +7,10 @@ import os
 
 # Load environment variables from .env file
 load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+api_key = os.getenv("GROQ_API_KEY")
 
 llm = ChatGroq(
-    groq_api_key=GROQ_API_KEY,
+    groq_api_key=api_key,
     model="llama3-70b-8192"
 )
 
